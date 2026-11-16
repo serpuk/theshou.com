@@ -1,0 +1,11 @@
+# Shou
+
+> Shou is an AI local host for places. It gives hotel and holiday-apartment guests an AI concierge, opened from a QR code with no app: answers about the place, what's on nearby (concerts, exhibitions, nightlife, local events), restaurant and activity recommendations, and a plan for their stay, in their own language.
+
+theshou.com is the global home of Shou. Shou is live in Belgium today on shou.be; more countries are planned, starting with France, the Netherlands and the United Kingdom.
+
+## Live today (Belgium)
+- [What's on in Belgium](https://shou.be/belgium-events): events across Belgium, updated daily
+- [Ask Shou](https://app.shou.be/): the AI event guide for Belgium
+- [Shou for holiday apartments](https://shou.be/hosts): AI guest guide and concierge for apartment hosts
+- [Shou for hotels](https://shou.be/hotels/offer): AI concierge for hotels

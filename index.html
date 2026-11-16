@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shou — your AI local host for places</title>
+<meta name="description" content="Shou is an AI local host for hotels, holiday apartments and other places: guests ask, discover what's on nearby and plan their time. Live in Belgium.">
+<link rel="canonical" href="https://theshou.com/">
+<meta name="theme-color" content="#0b0810">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Shou">
+<meta property="og:title" content="Shou — your AI local host for places">
+<meta property="og:description" content="Guests ask, discover what's on nearby and plan their time, in their own language. Live in Belgium on shou.be.">
+<meta property="og:url" content="https://theshou.com/">
+<meta property="og:image" content="https://theshou.com/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..800;1,9..144,500..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Shou","url":"https://theshou.com/","logo":"https://theshou.com/icon.svg","sameAs":["https://shou.be/"],"description":"AI local host for places: an AI concierge for hotels, holiday apartments and other places, with live local events and recommendations."}
+</script>
+<style>
+  :root {
+    --ink: #0b0810;
+    --panel: #151019;
+    --line: rgba(255,255,255,.09);
+    --line-2: rgba(255,255,255,.16);
+    --text: #f5f1f8;
+    --soft: #c3bcce;
+    --muted: #8f8799;
+    --pink: #ff3d8b;
+    --orange: #ff9b3d;
+    --grad: linear-gradient(100deg, var(--pink), var(--orange));
+    --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+    --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; min-height: 100vh; background: var(--ink); color: var(--text);
+    font: 400 17px/1.6 var(--sans); display: flex; flex-direction: column;
+    background-image:
+      radial-gradient(60rem 40rem at 85% -10%, rgba(255,61,139,.16), transparent 60%),
+      radial-gradient(50rem 36rem at -10% 110%, rgba(255,155,61,.10), transparent 60%);
+  }
+  a { color: inherit; }
+  a:focus-visible, .btn:focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; border-radius: 10px; }
+  .wrap { width: 100%; max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 28px 0; }
+  .brand { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font: 700 26px/1 var(--serif); letter-spacing: -.01em; }
+  .brand svg { width: 30px; height: 30px; }
+  main { flex: 1; display: flex; align-items: center; padding: 24px 0 56px; }
+  .eyebrow { display: inline-block; font-size: 12.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--soft); border: 1px solid var(--line-2); border-radius: 999px; padding: 6px 12px; }
+  h1 { font: 700 clamp(44px, 8vw, 92px)/.98 var(--serif); letter-spacing: -.025em; margin: 22px 0 18px; text-wrap: balance; }
+  h1 em { font-style: italic; font-weight: 600; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; padding-right: .06em; }
+  .lead { max-width: 40rem; font-size: clamp(18px, 2.2vw, 21px); color: var(--soft); margin: 0 0 36px; }
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; max-width: 54rem; }
+  .card { background: rgba(255,255,255,.035); border: 1px solid var(--line); border-radius: 18px; padding: 22px 22px 20px; display: flex; flex-direction: column; gap: 8px; }
+  .card h2 { font: 600 22px/1.2 var(--serif); margin: 0; }
+  .card p { margin: 0; color: var(--soft); font-size: 15.5px; }
+  .card .links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .btn { display: inline-flex; align-items: center; min-height: 40px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line-2); text-decoration: none; font-weight: 500; font-size: 14.5px; transition: border-color .2s, background .2s; }
+  .btn:hover { border-color: rgba(255,255,255,.35); background: rgba(255,255,255,.04); }
+  .btn.primary { background: var(--grad); border: 0; color: #1a0b12; font-weight: 600; }
+  .btn.primary:hover { filter: brightness(1.06); }
+  .note { margin: 28px 0 0; color: var(--muted); font-size: 14.5px; }
+  footer { border-top: 1px solid var(--line); padding: 22px 0 28px; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 18px; justify-content: space-between; }
+  footer a { color: var(--soft); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .wrap { padding: 0 16px; }
+    .cards { grid-template-columns: 1fr; }
+    main { align-items: flex-start; }
+  }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Shou home">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff2e7e"/><stop offset="1" stop-color="#ff9966"/></linearGradient></defs><rect x="3" y="22" width="3" height="10" rx="1" fill="url(#b)"/><rect x="8" y="18" width="3" height="14" rx="1" fill="url(#b)"/><rect x="13" y="15" width="3" height="17" rx="1" fill="url(#b)"/><rect x="18" y="17" width="3" height="15" rx="1" fill="url(#b)"/><rect x="23" y="20" width="3" height="12" rx="1" fill="url(#b)"/><rect x="28" y="24" width="3" height="8" rx="1" fill="url(#b)"/></svg>
+      shou
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <span class="eyebrow">Your AI local host</span>
+    <h1>Your city. Your vibe. <em>Your plan.</em></h1>
+    <p class="lead">Shou gives every guest an AI local host: answers about the place, what's on nearby tonight, where to eat and what to do, and a plan for their stay. In their own language, from a QR code, with no app to install.</p>
+
+    <div class="cards">
+      <section class="card" aria-labelledby="places">
+        <h2 id="places">For hotels and apartments</h2>
+        <p>Set up your guest concierge in minutes from your listing or website. Live in Belgium today.</p>
+        <div class="links">
+          <a class="btn primary" href="https://shou.be/hosts">Holiday apartments</a>
+          <a class="btn" href="https://shou.be/hotels/offer">Hotels</a>
+        </div>
+      </section>
+      <section class="card" aria-labelledby="events">
+        <h2 id="events">Discover what's on</h2>
+        <p>Concerts, exhibitions, nightlife and local events across Belgium, updated daily.</p>
+        <div class="links">
+          <a class="btn primary" href="https://shou.be/">Explore Belgium</a>
+          <a class="btn" href="https://app.shou.be/">Ask Shou</a>
+        </div>
+      </section>
+    </div>
+
+    <p class="note">More countries are on the way, starting with France, the Netherlands and the United Kingdom.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Shou</span>
+    <span>Belgium: <a href="https://shou.be/">shou.be</a></span>
+  </div>
+</footer>
+</body>
+</html>
