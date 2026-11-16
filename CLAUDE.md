@@ -23,8 +23,10 @@ Strybai Build workspace "theshou.com" (pillar build#28).
 - **Pages:** shou.be and app.shou.be challenge cloud-server traffic (Vercel Firewall), so checks from the cloud
   may get a 429 challenge; use `shou-backend.vercel.app` URLs or headless Chrome and say when a page could not
   be checked.
-- **Strybai Build:** reference tasks with `build#N` and close them with `closes build#N` in the PR; editing the
-  board itself needs the user's login.
+- **Strybai Build:** this repo syncs into the workspace "theshou.com": `build#N` starts its task N and
+  `closes build#N` in the PR closes it (`build#theshou/N` works too). From shou-backend / shou-frontend /
+  shou-landing, which sync into "shou Apartments", always write `build#theshou/N` for these tasks.
+  Editing the board itself needs the user's login.
 
 ## Rules
 - Static HTML, no build step. Vercel project serves the repo root (`vercel.json`: clean URLs,
